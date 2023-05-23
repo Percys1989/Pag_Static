@@ -1,0 +1,99 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NavBar */
+.navbar .navbar-nav .nav-link:hover{
+    background-color: rgb(243, 100, 100);
+}
+.navbar .navbar-nav .nav-link {
+    padding: 0.6em;
+}
+.navbar .navbar-brand {
+    padding: 0 0.6em;
+}
+@media only screen and (min-width: 992px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar .navbar-nav .nav-link {
+        padding: 1em 0.7em;
+    }
+    .navbar .navbar-brand {
+        padding: 0 0.8em;
+    }
+}
+/* Mapa */
+.gmap_iframe {
+    width:70%!important;
+    height:512px!important;
+}
+
+/* Button up */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(250, 46, 46);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* Card */
+.card {
+opacity: 0; /* Ocultamos las cards inicialmente */
+transition: opacity 0.5s ease-in-out;
+}
+  
+.card.show {
+opacity: 1; /* Mostramos las cards al hacer scroll */
+}
+  
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* carousel galeria */
+.carousel{
+    margin-top: 1%;
+}
+.carousel-cell{
+    width: 66%;
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-cell::before{
+    display: block;
+    content: "";
+}
+/* btn whatsapp */
+#whatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+}
+#imgwhat{
+    width: 60px;
+    height: 60px;
+}
+
+#imgwhat:hover{
+    transform: scale(1.3);
+}
