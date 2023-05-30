@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if (targetElement) {
         var offsetTop = targetElement.offsetTop;
-
         window.scrollTo({
           top: offsetTop,
           behavior: "smooth"
